@@ -1,4 +1,4 @@
-const ImageUtil = require("./image-util.js");
+  const ImageUtil = require("./image-util.js");
 
 class KMeansHSVPlotter {
   plot(elementId, clusters) {
@@ -25,7 +25,7 @@ class KMeansHSVPlotter {
     var layout = {
       margin: { l:0, r:0, b: 0, t: 0 },
       scene: {
-        xaxis: { title: "RedH" },
+        xaxis: { title: "RedHUE" },
         yaxis: { title: "GreenS"},
         zaxis: { title: "BlueV"}
       }
