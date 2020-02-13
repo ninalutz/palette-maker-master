@@ -1,7 +1,7 @@
-%% Get Image and Plot 3d RGB points
+%Get Image and Plot 3d RGB points
 % ColorVector [R G B]
 
-function rgb_HSL = rgbToHsl(ColorVector) 
+function [rgb_HSL, convertedval2]= rgbToHsl(ColorVector) 
   k = 0;
   unit_rgb = ColorVector/255; %Basically rabs = r / 255;
   color_most_represented = max(unit_rgb);
@@ -55,13 +55,16 @@ function rgb_HSL = rgbToHsl(ColorVector)
       h = h +360
   end
   
+  
   convertedval = [h s l]*100;
+  convertedval2  = convertedval
+   
   disp(convertedval)
   %disp(h)
   %disp(k)
-  %% Error primarily with blue at the moment
+  % Error primarily with blue at the moment
   %https://www.rapidtables.com/convert/color/rgb-to-hsl.html
-  
+ 
   
   
 end
