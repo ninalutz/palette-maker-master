@@ -1,7 +1,7 @@
 %Get Image and Plot 3d RGB points
 % ColorVector [R G B]
 
-function [rgb_HSL, convertedval2]= rgbToHsl(ColorVector) 
+function [rgb_HSL]= rgbToHsl(ColorVector) 
   k = 0;
   unit_rgb = ColorVector/255; %Basically rabs = r / 255;
   color_most_represented = max(unit_rgb);

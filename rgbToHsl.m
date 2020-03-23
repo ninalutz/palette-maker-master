@@ -72,4 +72,4 @@ function [HSL] = rgbToHsl(ColorVector)
   %Error primarily with blue at the moment
   %https://www.rapidtables.com/convert/color/rgb-to-hsl.html
 
-end
+  end
